@@ -4,8 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paper Productions</title>
+    <style>
+        .bottomImage{
+            position:absolute;
+            top:80vh;
+            left:50vw;
+            transform:translate(-50%, -50%);
+        }
+        #center{
+            padding:2%;
+            position: absolute;
+            top:45vh;
+            left:50vw;
+            transform:translate(-50%, -50%);
+            border:1px solid;
+            border-radius: 10px;
+            background-color:rgba(130, 130, 130, 0.333)
+        }
+        @media (prefers-color-scheme: dark) {
+            body{
+                overflow:hidden;
+                padding-left:20%;
+                padding-right:20%;
+                background-size: cover;
+                background-position: 0px 0px,0px 0px;
+                background-image: radial-gradient(75% 75% at -8% -3%, #2A3D49FF 0%, #073AFF00 100%),radial-gradient(142% 91% at 111% 84%, #022E4FFF 0%, #001830 100%);
+                color:white;
+                font-family: Arial, Helvetica, sans-serif;
+                height:100vh;
+            }  
+            #bottomImageDark{
+                display:block;
+            } 
+            #bottomImageLight{
+                display:none;
+            }
+        }
+        @media (prefers-color-scheme: light) {
+            body{
+                overflow:hidden;
+                padding-left:20%;
+                padding-right:20%;
+                background-size: cover;
+                background-position: 0px 0px,0px 0px;
+                background-image: radial-gradient(75% 75% at -8% -3%, #88b2d9 0%, #073AFF00 100%),radial-gradient(142% 91% at 111% 84%, #b0ceeb 0%, #7ca0c2 100%);
+                color:rgb(0, 0, 0);
+                font-family: Arial, Helvetica, sans-serif;
+                height:100vh;
+            }  
+            #bottomImageDark{
+                display:none;
+            } 
+            #bottomImageLight{
+                display:block;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="center">
+        <h1 id="mainMessage">UNDER CONSTRUCTION</h1>
+        <p id="subMessage">this website is under construction, we are updating this website to make it better visualy and functionally, come back soon!</p>
+    </div>
+    <img class='bottomImage' height="70vh" id="bottomImageDark" src="assets/images/darkmode_transparent2.png" alt="paper productions logo"/>
+    <img class="bottomImage" height="70vh" id="bottomImageLight" src="assets/images/lightmode_transparent2.png" alt="paper productions logo"/>
 </body>
 </html>
