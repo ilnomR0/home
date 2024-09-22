@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/images/paper_productions.png" type="image/x-icon"/>
     <title>Paper Productions</title>
+    <link rel="icon" href="assets/images/paper_productions.png" type="image/x-icon"/>
     <style>
         .bottomImage{
             position:absolute;
@@ -23,6 +23,9 @@
             background-color:rgba(130, 130, 130, 0.333)
         }
         @media (prefers-color-scheme: dark) {
+            a{
+                color:#88b2d9;
+            }
             body{
                 overflow:hidden;
                 padding-left:20%;
@@ -41,7 +44,18 @@
                 display:none;
             }
         }
+        @font-face {
+            font-family: 'Paper8';
+            src: url('/assets/fonts/paper8.ttf');
+        }
+        @font-face {
+            font-family: 'Paper8 Mono';
+            src: url('/assets/fonts/paper8-mono.ttf');
+        }
         @media (prefers-color-scheme: light) {
+            a{
+                color:#001830;
+            }
             body{
                 overflow:hidden;
                 padding-left:20%;
@@ -71,5 +85,12 @@
     </div>
     <img class='bottomImage' height="70vh" id="bottomImageDark" src="assets/images/darkmode_transparent2.png" alt="paper productions logo"/>
     <img class="bottomImage" height="70vh" id="bottomImageLight" src="assets/images/lightmode_transparent2.png" alt="paper productions logo"/>
+    <a href="https://discord.gg/NEP5b6aSru" style="position:absolute;
+    top:90vh;
+    left:50vw;
+    transform:translate(-50%, -50%);
+    font-family: 'Paper8';
+    font-size: large;
+    ">check out our discord!</a>
 </body>
 </html>
