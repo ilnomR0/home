@@ -12,6 +12,37 @@
             left:50vw;
             transform:translate(-50%, -50%);
         }
+        #corner{
+            position:absolute;
+            transform:rotate(-45deg);
+            right: -896in;
+            height: 807in;
+            width: 807in;
+            bottom: -480in;
+            backdrop-filter: hue-rotate(208deg);
+            transition: .5s cubic-bezier(.22,.61,.36,1);
+        }
+        #homeText{
+            transition: .5s cubic-bezier(.22,.61,.36,1);
+            transform:rotate(-45deg);
+            position:absolute;
+            bottom:0;
+            right:0;
+        }
+        #corner:hover + #homeText{
+            bottom:0.5in;
+            right:0.5in;
+        }
+        #corner:hover{
+            bottom:-479in;
+        }
+        #corner:active{
+            bottom:-420in;
+        }
+        #corner:active + #homeText{
+            bottom:100%;
+            right:100%;
+        }
         #center{
             padding:2%;
             position: absolute;
@@ -24,7 +55,7 @@
         }
         @media (prefers-color-scheme: dark) {
             a{
-                color:#88b2d9;
+                color:#d98888;
             }
             body{
                 overflow:hidden;
@@ -32,7 +63,7 @@
                 padding-right:20%;
                 background-size: cover;
                 background-position: 0px 0px,0px 0px;
-                background-image: radial-gradient(75% 75% at -8% -3%, #2A3D49FF 0%, #073AFF00 100%),radial-gradient(142% 91% at 111% 84%, #022E4FFF 0%, #001830 100%);
+                background-image: radial-gradient(75% 75% at -8% -3%, rgb(73, 42, 42) 0%, #ff070700 100%),radial-gradient(142% 91% at 111% 84%, rgb(79, 2, 2) 0%, #300000 100%);
                 color:white;
                 font-family: Arial, Helvetica, sans-serif;
                 height:100vh;
@@ -54,7 +85,7 @@
         }
         @media (prefers-color-scheme: light) {
             a{
-                color:#001830;
+                color:#300000;
             }
             body{
                 overflow:hidden;
@@ -62,7 +93,7 @@
                 padding-right:20%;
                 background-size: cover;
                 background-position: 0px 0px,0px 0px;
-                background-image: radial-gradient(75% 75% at -8% -3%, #88b2d9 0%, #073AFF00 100%),radial-gradient(142% 91% at 111% 84%, #b0ceeb 0%, #7ca0c2 100%);
+                background-image: radial-gradient(75% 75% at -8% -3%, #d98888 0%, #073AFF00 100%),radial-gradient(142% 91% at 111% 84%, #ebb0b0 0%, #c27c7c 100%);
                 color:rgb(0, 0, 0);
                 font-family: Arial, Helvetica, sans-serif;
                 height:100vh;
@@ -79,18 +110,12 @@
 <body>
     <div id="center">
         <center>
-            <h1 id="mainMessage">UNDER CONSTRUCTION</h1>
-            <p id="subMessage">this website is under construction, we are updating this website to make it better visually and functionally, come back soon!</p>
+            <h1 id="mainMessage">ERROR 404</h1>
+            <p id="subMessage">this part of the website does not exist! sorry!</p>
         </center>
     </div>
-    <img class='bottomImage' height="70vh" id="bottomImageDark" src="/assets/images/darkmode_transparent2.png" alt="paper productions logo"/>
-    <img class="bottomImage" height="70vh" id="bottomImageLight" src="/assets/images/lightmode_transparent2.png" alt="paper productions logo"/>
-    <a href="https://discord.gg/NEP5b6aSru" style="position:absolute;
-    top:90vh;
-    left:50vw;
-    transform:translate(-50%, -50%);
-    font-family: 'Paper8';
-    font-size: large;
-    ">check out our discord!</a>
+
+    <div id="corner" onclick="location.href='https://www.paperproductions.org'"></div>
+    <h1 style="display:inline-block" id="homeText">home</h1>
 </body>
 </html>
