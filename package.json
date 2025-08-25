@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "name": "paperproductionsweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilnomR0/paperproductionsWeb.git"
+  },
+  "keywords": [
+    "o"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilnomR0/paperproductionsWeb/issues"
+  },
+  "homepage": "https://github.com/ilnomR0/paperproductionsWeb#readme"
+}
