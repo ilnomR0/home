@@ -1,97 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paper Productions</title>
-    <link rel="icon" href="assets/images/paper_productions.png" type="image/x-icon"/>
-    <meta name="google-site-verification" content="K0hBZ-_Wbj6V_DGAcw1Nhtn1e40dEaK9v7nUQupaSTg" />
-    <style>
-        .bottomImage{
-            position:absolute;
-            top:80vh;
-            left:50vw;
-            transform:translate(-50%, -50%);
-        }
-        #center{
-            padding:2%;
-            position: absolute;
-            top:45vh;
-            left:50vw;
-            transform:translate(-50%, -50%);
-            border:1px solid;
-            border-radius: 10px;
-            background-color:rgba(130, 130, 130, 0.333)
-        }
-        @media (prefers-color-scheme: dark) {
-            a{
-                color:#88b2d9;
-            }
-            body{
-                overflow:hidden;
-                padding-left:20%;
-                padding-right:20%;
-                background-size: cover;
-                background-position: 0px 0px,0px 0px;
-                background-image: radial-gradient(75% 75% at -8% -3%, #2A3D49FF 0%, #073AFF00 100%),radial-gradient(142% 91% at 111% 84%, #022E4FFF 0%, #001830 100%);
-                color:white;
-                font-family: Arial, Helvetica, sans-serif;
-                height:100vh;
-            }  
-            #bottomImageDark{
-                display:block;
-            } 
-            #bottomImageLight{
-                display:none;
-            }
-        }
-        @font-face {
-            font-family: 'Paper8';
-            src: url('/assets/fonts/paper8.ttf');
-        }
-        @font-face {
-            font-family: 'Paper8 Mono';
-            src: url('/assets/fonts/paper8-mono.ttf');
-        }
-        @media (prefers-color-scheme: light) {
-            a{
-                color:#001830;
-            }
-            body{
-                overflow:hidden;
-                padding-left:20%;
-                padding-right:20%;
-                background-size: cover;
-                background-position: 0px 0px,0px 0px;
-                background-image: radial-gradient(75% 75% at -8% -3%, #88b2d9 0%, #073AFF00 100%),radial-gradient(142% 91% at 111% 84%, #b0ceeb 0%, #7ca0c2 100%);
-                color:rgb(0, 0, 0);
-                font-family: Arial, Helvetica, sans-serif;
-                height:100vh;
-            }  
-            #bottomImageDark{
-                display:none;
-            } 
-            #bottomImageLight{
-                display:block;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Paper Productions</title>
+
+  <link rel="icon" href="assets/images/paper_productions.png" type="image/x-icon" />
+  <meta name="google-site-verification" content="K0hBZ-_Wbj6V_DGAcw1Nhtn1e40dEaK9v7nUQupaSTg" />
+
+  <link rel="stylesheet" href="assets/styles/main.css" />
+  <link rel="stylesheet" href="assets/styles/homepage.css" />
 </head>
+
 <body>
-    <div id="center">
-        <center>
-            <h1 id="mainMessage">UNDER CONSTRUCTION</h1>
-            <p id="subMessage">this website is under construction, we are updating this website to make it better visually and functionally, come back soon!</p>
-        </center>
+  <div id="title">
+    <h1>Welcome! </h1>
+    <picture>
+      <source srcset="assets/images/lightmode_transparent2.png" media="(prefers-color-scheme: light)">
+      <source srcset="assets/images/darkmode_transparent2.png" media="(prefers-color-scheme: dark)" />
+      <img id="titleLogo" src="assets/images/lightmode_transparent2.png" alt="paper productions logo" />
+    </picture>
+  </div>
+
+  <div id="applications">
+    <p>we are currently working on a homepage that should really say who we are. Right now; this place is a mess. We are
+      sorry for the inconvenience
+    <p>
+    <p>Here are some quick links with descriptions of all of our projects, and/or if the project you are looking for is
+      in development, merely just a description</p>
+
+
+    <div class="descContainer">
+      <h1>applications</h1>
+
+      <hr>
+
+      <h2><a href="https://bidder.paperproductions.org">Bidder</a></h2>
+      <p> Bidder is a bidding application made for business cordinators for bidding applications. This app interfaces
+        with google sheets, and goes through it mapping the bidding number with a name. Instead of calling out "number
+        423? do we have a number 423?", you just say "jen? Do we have a jen baker?".</p>
+      <br>
+
+      <h2><a href="https://paperos.paperproductions.org">PaperOS (web version)</a></h2>
+      <p> This is a web-based Oporating System. Initially started in 2022; this project has gone through multiple
+        innovations as I have grown in my ability to program. This consists of a host of developer tools and
+        applications for creating applications for whatever your needs may be. there are plans to blow this up into a
+        fully-fledged Oporating System, when the language "paper" is completed.</p>
+      <br>
+
     </div>
-    <img class='bottomImage' height="70vh" id="bottomImageDark" src="/assets/images/darkmode_transparent2.png" alt="paper productions logo"/>
-    <img class="bottomImage" height="70vh" id="bottomImageLight" src="/assets/images/lightmode_transparent2.png" alt="paper productions logo"/>
-    <a href="https://discord.gg/NEP5b6aSru" style="position:absolute;
-    top:90vh;
-    left:50vw;
-    transform:translate(-50%, -50%);
-    font-family: 'Paper8';
-    font-size: large;
-    ">check out our discord!</a>
+
+    <div class="descContainer">
+      <h1>In development applications</h1>
+
+      <hr>
+      <h2>MQT Forms</h2>
+      <p>This application is a presentation application that has an emphisis on your audience. This will include your
+        average editing tools that you know and love from things like canva, google slides, and powerpoint, plus a ton
+        more super cool features all on the web for your convienience. One major feature is the ability for live polls
+        on the presentation itself. Either scan a QR code or go to the website link posted on your presentation, and
+        have your audience fill out an anonomous form with the results being displayed live for all to see</p>
+      <p>This is for everybody. for meetings, classrooms, a large get together, whoever might need a presentation app
+        with form intigration.</p>
+
+      <br>
+
+      <h2>Paper</h2>
+      <p> Paper is a staticially typed, OOP oriented programming language with explicit control over memory, native
+        compilation, and a rich standard library (POSH) for application-level development.
+      <p> this is for developers who want a language with the ultimate flexibility between low-level and high-level. For
+        beginners and professionals alike, for people who want the quickest development and the quickest execution. </p>
+      <br>
+    </div>
+
+
+    <h1>header 1</h1>
+    <h2>header 2</h2>
+    <h3>header 3</h3>
+    <h4>header 4</h4>
+    <h5>header 5</h5>
+    <h6>header 6</h6>
+
+  </div>
+
+
 </body>
+
 </html>

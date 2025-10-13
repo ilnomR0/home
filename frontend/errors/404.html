@@ -1,121 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paper Productions</title>
-    <link rel="icon" href="assets/images/paper_productions.png" type="image/x-icon"/>
-    <style>
-        .bottomImage{
-            position:absolute;
-            top:80vh;
-            left:50vw;
-            transform:translate(-50%, -50%);
-        }
-        #corner{
-            position:absolute;
-            transform:rotate(-45deg);
-            right: -896in;
-            height: 807in;
-            width: 807in;
-            bottom: -480in;
-            backdrop-filter: hue-rotate(208deg);
-            transition: .5s cubic-bezier(.22,.61,.36,1);
-        }
-        #homeText{
-            transition: .5s cubic-bezier(.22,.61,.36,1);
-            transform:rotate(-45deg);
-            position:absolute;
-            bottom:0;
-            right:0;
-        }
-        #corner:hover + #homeText{
-            bottom:0.5in;
-            right:0.5in;
-        }
-        #corner:hover{
-            bottom:-479in;
-        }
-        #corner:active{
-            bottom:-420in;
-        }
-        #corner:active + #homeText{
-            bottom:100%;
-            right:100%;
-        }
-        #center{
-            padding:2%;
-            position: absolute;
-            top:45vh;
-            left:50vw;
-            transform:translate(-50%, -50%);
-            border:1px solid;
-            border-radius: 10px;
-            background-color:rgba(130, 130, 130, 0.333)
-        }
-        @media (prefers-color-scheme: dark) {
-            a{
-                color:#d98888;
-            }
-            body{
-                overflow:hidden;
-                padding-left:20%;
-                padding-right:20%;
-                background-size: cover;
-                background-position: 0px 0px,0px 0px;
-                background-image: radial-gradient(75% 75% at -8% -3%, rgb(73, 42, 42) 0%, #ff070700 100%),radial-gradient(142% 91% at 111% 84%, rgb(79, 2, 2) 0%, #300000 100%);
-                color:white;
-                font-family: Arial, Helvetica, sans-serif;
-                height:100vh;
-            }  
-            #bottomImageDark{
-                display:block;
-            } 
-            #bottomImageLight{
-                display:none;
-            }
-        }
-        @font-face {
-            font-family: 'Paper8';
-            src: url('/assets/fonts/paper8.ttf');
-        }
-        @font-face {
-            font-family: 'Paper8 Mono';
-            src: url('/assets/fonts/paper8-mono.ttf');
-        }
-        @media (prefers-color-scheme: light) {
-            a{
-                color:#300000;
-            }
-            body{
-                overflow:hidden;
-                padding-left:20%;
-                padding-right:20%;
-                background-size: cover;
-                background-position: 0px 0px,0px 0px;
-                background-image: radial-gradient(75% 75% at -8% -3%, #d98888 0%, #073AFF00 100%),radial-gradient(142% 91% at 111% 84%, #ebb0b0 0%, #c27c7c 100%);
-                color:rgb(0, 0, 0);
-                font-family: Arial, Helvetica, sans-serif;
-                height:100vh;
-            }  
-            #bottomImageDark{
-                display:none;
-            } 
-            #bottomImageLight{
-                display:block;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div id="center">
-        <center>
-            <h1 id="mainMessage">ERROR 404</h1>
-            <p id="subMessage">this part of the website does not exist! sorry!</p>
-        </center>
-    </div>
-
-    <div id="corner" onclick="location.href='https://www.paperproductions.org'"></div>
-    <h1 style="display:inline-block" id="homeText">home</h1>
-</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>404 | page not found</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>404 | page not found</h1>
+    <p>the resource that you are looking for does not exist.</p>
+  </body>
 </html>

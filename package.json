@@ -1,27 +1,27 @@
 {
-  "dependencies": {
-    "express": "^5.1.0"
-  },
-  "name": "paperproductionsweb",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "devDependencies": {},
-  "scripts": {
-    "start":"node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ilnomR0/paperproductionsWeb.git"
-  },
-  "keywords": [
-    "o"
-  ],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ilnomR0/paperproductionsWeb/issues"
-  },
-  "homepage": "https://github.com/ilnomR0/paperproductionsWeb#readme"
+    "dependencies": {
+        "express": "^5.1.0"
+    },
+    "name": "paperproductionsweb",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "devDependencies": {},
+    "scripts": {
+        "start":"node server.js",
+        "debug": "DEBUG=express:* node server.js"    
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ilnomR0/paperproductionsWeb.git"
+    },
+    "keywords": [
+        "o"
+    ],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+         "url": "https://github.com/ilnomR0/paperproductionsWeb/issues"
+    },
+    "homepage": "https://github.com/ilnomR0/paperproductionsWeb#readme"
 }

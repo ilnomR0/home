@@ -1,0 +1,99 @@
+:root{
+
+  /*logo colors*/
+  --logoC1:#01d5ff;
+  --logoC2:#01b9ff;
+  --logoC3:#3c4fff;
+  --logoC4:#3f39ff;
+
+  --logoC5:#dfe0df;
+  --logoC6:#dddddd;
+  --logoC7:#c7c7c7;
+  --logoC8:#bdbdbd;
+
+  --background1: color-mix(in lab, var(--logoC1), #000 95%);
+  --background2: color-mix(in lab, var(--logoC1), #000 79%);
+  --header1: color-mix(in lab, var(--logoC4), #fff 17%);
+  --header2: color-mix(in lab, var(--logoC4), #fff 36%);
+  --header3: color-mix(in lab, var(--logoC2), #fff 40%);
+  --header4: color-mix(in lab, var(--logoC2), #fff 61%);
+  --header5: color-mix(in lab, var(--logoC5), #fff 45%);
+  --header6: color-mix(in lab, var(--logoC5), #fff 45%);
+  --paragraph: #fff;
+  --anchor-active: color-mix(in lab, var(--logoC4), #707 50%);
+  --anchor: color-mix(in lab, var(--logoC4), #707 19%);
+}
+
+@font-face{
+  font-family:"roboto flex";
+  src:url("../fonts/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf");
+}
+
+@media (prefers-color-scheme: light){
+  :root{
+
+    /*light mode color scheme*/
+    --background1: color-mix(in lab, var(--logoC1), #fff 95%);
+    --background2: color-mix(in lab, var(--logoC1), #fff 75%);
+    --header1: color-mix(in lab, var(--logoC4), #000 17%);
+    --header2: color-mix(in lab, var(--logoC4), #000 36%);
+    --header3: color-mix(in lab, var(--logoC2), #000 40%);
+    --header4: color-mix(in lab, var(--logoC2), #000 61%);
+    --header5: color-mix(in lab, var(--logoC5), #000 45%);
+    --header6: color-mix(in lab, var(--logoC5), #000 45%);
+    --paragraph: #000;
+    --anchor-active: color-mix(in lab, var(--logoC4), #f0f 50%);
+    --anchor: color-mix(in lab, var(--logoC4), #f0f 19%);
+  }
+}
+
+body{
+  background-color:var(--background1);
+  color:var(--paragraph);
+  font-family:"roboto flex";
+}
+
+h1{
+  color:var(--header1);
+  font-size: 2.5rem;
+  font-stretch: 137%;
+  font-weight: 300;
+  font-kerning: 10%;
+}
+h2{
+  color:var(--header2);
+  font-size: 1.8rem;
+  font-weight: 645.2;
+}
+h3{
+  color:var(--header3);
+  font-weight: 500;
+  font-size: 1.25rem;
+  font-stretch: 130%;
+}
+h4{
+  color:var(--header4);
+  font-weight: 200;
+  font-size: 1.1rem;
+}
+h5{
+  color:var(--header5);
+  font-stretch: 30%;
+  font-weight: 500;
+  font-variation-settings: "slnt" -10;
+}
+h6{
+  color:var(--header6);
+  font-stretch: 15%;
+  font-weight: 300;
+  font-size: 0.7rem;
+  font-variation-settings: "slnt" -10;
+}
+
+a{
+  color:var(--anchor);
+}
+
+a:visited{
+  color:var(--anchor-active);
+}

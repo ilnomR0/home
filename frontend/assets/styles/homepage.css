@@ -1,0 +1,29 @@
+#title{
+  display:flex;
+  justify-content:space-between; 
+  border-bottom:var(--header1);
+  align-items:center;
+}
+
+#title > *{
+  margin:0;
+  padding:0;
+}
+
+#titleLogo{
+  height:clamp(5rem, 4vw, 5rem);
+  max-width:100%;
+  object-fit:contain;
+}
+
+.descContainer {
+  border-radius:2em;
+  background-color:var(--background2);
+  padding:2em;
+  margin:0.5em;
+}
+
+#applications {
+  display:flex;
+
+}
