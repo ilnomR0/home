@@ -1,13 +1,35 @@
 #title{
   display:flex;
   justify-content:space-between; 
-  border-bottom:var(--header1);
+  border-bottom:1px var(--header2) solid;
   align-items:center;
 }
+
+
 
 #title > *{
   margin:0;
   padding:0;
+}
+
+#applications{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+}
+#applications > *{
+  width:100%;
+  max-width:460px;
+}
+@media (max-width: 900px) {
+  #applications{
+    flex-direction:column;
+    justify-content:initial;
+  }
+  #applications > * {
+  width:inherit;
+  max-width:initial;
+}
 }
 
 #titleLogo{
